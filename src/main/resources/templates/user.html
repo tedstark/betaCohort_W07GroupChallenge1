@@ -9,10 +9,10 @@
     </head>
     <body>
         <h1>BlueBerry Muffin User Info Page</h1>
-        <p th:text="${user.name}"></p>
-        <p th:text="${user.userLogin}"></p>
-        <p th:text="${user.createDate}"></p>
-        <button onclick="goHome()">User Info Page</button>
+        <p class="candy" th:text="'User Name: '+ ${user.userName}"></p>
+        <p class="candy" th:text="'User Login Name: '+ ${user.userLogin}"></p>
+        <p class="candy" th:text="'User Creation Date: '+${user.userCreate}"></p>
+        <button onclick="goHome()">Home Page</button>
         <button onclick="goToAllUsers()">All Users Page</button>
     </body>
 </html>
