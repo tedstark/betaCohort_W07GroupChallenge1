@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Blueberry Muffin All Users</title>
+        <link rel="stylesheet" th:href="@{/style.css}"/>
+        <script th:src="@{/jquery-3.3.1.js}"></script>
+        <script type="text/javascript" th:src="@{/client.js}"></script>
+    </head>
+    <body>
+        <h1>BlueBerry Muffin All User Info Page</h1>
+        <div th:each="user:${allusers}">
+            <p th:text="${user.name} + ' ' + ${user.userLogin}"></p>
+        </div>
+        <button onclick="goHome()">All Users Page</button>
+        <button onclick="goToUserInfo()">User Info Page</button>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Blueberry Muffin User Search Page</title>
+        <link rel="stylesheet" th:href="@{/style.css}"/>
+        <script th:src="@{/jquery-3.3.1.js}"></script>
+        <script type="text/javascript" th:src="@{/client.js}"></script>
+    </head>
+    <body>
+        <h1>BlueBerry Muffin User Search Page</h1>
+        <form>
+            <input type="text" id="inputName" placeholder="Enter a name"/>
+        </form>
+        <button onclick="goToUserInfo()">User Info Page</button>
+        <button onclick="goToAllUsers()">All Users Page</button>
+        <button onclick="goHome()">Home</button>
+    </body>
+</html>
